@@ -1,36 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import CategorieItem from "../../Components/CategorieItem";
 
 const Categories = () => {
-  const categories = [
-    {
-      _id: "63f8f8b1f99d1b2e5e7a80e1",
-      nom: "Java",
-      image: "/img/java.ico",
-      description: "Java est un langage de programmation orienté objet.",
-      created_at: "2024-09-01T12:00:00Z",
-      updated_at: "2024-09-01T12:00:00Z",
-    },
-    {
-      _id: "63f8f8b1f99d1b2e5e7a80e2",
-      nom: "JavaScript",
-      image: "/img/js.ico",
-      description: "JavaScript est un langage de programmation dynamique.",
-      created_at: "2024-09-01T12:00:00Z",
-      updated_at: "2024-09-01T12:00:00Z",
-    },
-  ];
+  const [categories, setCategories] = useState([]);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        const response = await axios.get(
+          "http://localhost:5000/api/categories"
+        );
+        setCategories(response.data);
+      } catch (err) {
+        console.error("Erreur lors de la récupération des catégories:", err);
+        setError("Impossible de charger les catégories. Veuillez réessayer.");
+      }
+    };
+
+    fetchCategories();
+  }, []);
 
   return (
     <div className="container my-5">
       <h1 className="text-center mb-4">Catégories</h1>
-      <div className="row">
-        {categories.map((categorie) => (
-          <div key={categorie._id} className="col-md-4">
-            <CategorieItem categorie={categorie} />
-          </div>
-        ))}
-      </div>
+      {error && <p className="text-danger text-center">{error}</p>}
+      {categories.length !== 0 ? (
+        <div className="row">
+          {categories.map((categorie) => (
+            <div key={categorie._id} className="col-md-4">
+              <CategorieItem categorie={categorie} />
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div>Aucune catégories</div>
+      )}
     </div>
   );
 };

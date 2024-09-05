@@ -1,0 +1,86 @@
+[
+  {
+    "nom": "Java",
+    "image": "/img/java.ico",
+    "description": "Java est un langage de programmation orienté objet, conçu pour être portable, sûr et performant.",
+    "created_at": "2024-09-01T12:00:00Z",
+    "updated_at": "2024-09-01T12:00:00Z"
+  },
+  {
+    "nom": "JavaScript",
+    "image": "/img/js.ico",
+    "description": "JavaScript est un langage de programmation dynamique, léger et très utilisé dans le développement web.",
+    "created_at": "2024-09-01T12:00:00Z",
+    "updated_at": "2024-09-01T12:00:00Z"
+  },
+  {
+    "nom": "Python",
+    "image": "/img/python.ico",
+    "description": "Python est un langage de programmation interprété, connu pour sa syntaxe claire et sa lisibilité.",
+    "created_at": "2024-09-01T12:00:00Z",
+    "updated_at": "2024-09-01T12:00:00Z"
+  },
+  {
+    "nom": "React",
+    "image": "/img/react.ico",
+    "description": "React est une bibliothèque JavaScript pour construire des interfaces utilisateur, développée par Facebook.",
+    "created_at": "2024-09-01T12:00:00Z",
+    "updated_at": "2024-09-01T12:00:00Z"
+  },
+  {
+    "nom": "Ruby",
+    "image": "/img/ruby.ico",
+    "description": "Ruby est un langage de programmation dynamique et open-source, principalement utilisé pour le développement web.",
+    "created_at": "2024-09-01T12:00:00Z",
+    "updated_at": "2024-09-01T12:00:00Z"
+  },
+  {
+    "nom": "TypeScript",
+    "image": "/img/typescript.png",
+    "description": "TypeScript est une extension syntaxique de JavaScript, qui ajoute le typage statique optionnel.",
+    "created_at": "2024-09-01T12:00:00Z",
+    "updated_at": "2024-09-01T12:00:00Z"
+  },
+  {
+    "nom": "Vue.js",
+    "image": "/img/vue.png",
+    "description": "Vue.js est un framework JavaScript progressif utilisé pour construire des interfaces utilisateur et des applications web.",
+    "created_at": "2024-09-01T12:00:00Z",
+    "updated_at": "2024-09-01T12:00:00Z"
+  },
+  {
+    "nom": "Django",
+    "image": "/img/django.png",
+    "description": "Django est un framework web Python qui encourage un développement rapide et une conception propre et pragmatique.",
+    "created_at": "2024-09-01T12:00:00Z",
+    "updated_at": "2024-09-01T12:00:00Z"
+  },
+  {
+    "nom": "Laravel",
+    "image": "/img/laravel.png",
+    "description": "Laravel est un framework PHP open-source conçu pour le développement d'applications web suivant le modèle MVC.",
+    "created_at": "2024-09-01T12:00:00Z",
+    "updated_at": "2024-09-01T12:00:00Z"
+  },
+  {
+    "nom": "Swift",
+    "image": "/img/swift.png",
+    "description": "Swift est un langage de programmation d'Apple utilisé pour le développement d'applications iOS et macOS.",
+    "created_at": "2024-09-01T12:00:00Z",
+    "updated_at": "2024-09-01T12:00:00Z"
+  },
+  {
+    "nom": "Flutter",
+    "image": "/img/flutter.png",
+    "description": "Flutter est un framework open-source de Google pour la création d'applications multiplateformes (iOS, Android).",
+    "created_at": "2024-09-01T12:00:00Z",
+    "updated_at": "2024-09-01T12:00:00Z"
+  },
+  {
+    "nom": "C#",
+    "image": "/img/c.png",
+    "description": "C# est un langage de programmation moderne et orienté objet, utilisé pour le développement de logiciels et d'applications sur la plateforme .NET.",
+    "created_at": "2024-09-01T12:00:00Z",
+    "updated_at": "2024-09-01T12:00:00Z"
+  }
+]

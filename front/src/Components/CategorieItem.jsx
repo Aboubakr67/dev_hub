@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const CategorieItem = ({ categorie }) => {
   return (
-    <div className="categorie-item card mb-3">
+    <article className="categorie-item card mb-3">
       <div className="card-body">
         <h5 className="card-title">
           {categorie.image && (
@@ -18,14 +18,14 @@ const CategorieItem = ({ categorie }) => {
         <p className="card-text">{categorie.description}</p>
         <p className="card-text">
           <small className="text-muted">
-            Créé le {new Date(categorie.created_at).toLocaleDateString()}
+            Créé le {new Date(categorie.createdAt).toLocaleDateString()}
           </small>
         </p>
         <Link to={`/categorie/${categorie._id}`} className="btn btn-primary">
           Voir Détails
         </Link>
       </div>
-    </div>
+    </article>
   );
 };
 

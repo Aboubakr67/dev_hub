@@ -6,6 +6,8 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import NewArticle from "./Pages/Article/NewArticle";
 import Categories from "./Pages/Categorie/Categories";
+import CategorieDetails from "./Pages/Categorie/CategorieDetails";
+import EditArticle from "./Pages/Article/EditArticle";
 
 function App() {
   return (
@@ -14,12 +16,14 @@ function App() {
         <Header />
         <main style={{ paddingBottom: "60px" }}>
           <Routes>
+            {/* Article */}
             <Route path="/" element={<Home />} />
-            <Route path="/new-article" element={<NewArticle />} />
             <Route path="/article/:id" element={<ArticleDetails />} />
+            <Route path="/new-article" element={<NewArticle />} />
+            <Route path="/article/edit/:id" element={<EditArticle />} />
+            {/* Categorie */}
             <Route path="/categories" element={<Categories />} />
-            {/* <Route path="/new-categorie" element={<NewCategorie />} /> */}
-            {/* <Route path="/categorie/:id" element={<CategorieDetails />} /> */}
+            <Route path="/categorie/:id" element={<CategorieDetails />} />
           </Routes>
         </main>
         <Footer />
