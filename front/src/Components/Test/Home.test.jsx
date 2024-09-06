@@ -13,4 +13,3 @@ describe("Home Component", () => {
     expect(screen.getByText(/Articles récents/i)).toBeDefined();
   });
 });
-
